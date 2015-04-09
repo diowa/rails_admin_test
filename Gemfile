@@ -18,7 +18,7 @@ gem 'rails_admin'
 gem 'ancestry'
 gem 'rails_admin_nestable'
 gem 'globalize'
-gem 'rails_admin_globalize', github: 'link82/rails_admin_globalize'
+gem 'rails_admin_globalize'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

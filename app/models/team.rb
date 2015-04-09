@@ -1,5 +1,5 @@
 class Team < ActiveRecord::Base
-  translates :color
+  translates :color, :details
 
   has_ancestry
 end

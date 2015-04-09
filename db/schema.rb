@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150409102325) do
+ActiveRecord::Schema.define(version: 20150409112035) do
 
   create_table "team_translations", force: :cascade do |t|
     t.integer  "team_id",    null: false
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150409102325) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "color"
+    t.text     "details"
   end
 
   add_index "team_translations", ["locale"], name: "index_team_translations_on_locale"
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 20150409102325) do
     t.integer  "position"
     t.string   "ancestry"
     t.integer  "ancestry_depth"
+    t.text     "details"
   end
 
 end
